@@ -1,0 +1,60 @@
+Do a write up for the followings:? 
+1. Difference between HTTP1.1 vs HTTP2 ?
+A)	  		HTTP1.1	     
+  Text based protocol that is in the readable form.
+  HTTP1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.  
+  The Refresh rate HTPP1.1 is slow.
+
+			HTTP2
+  It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). Needs to be converted back from binary in order to read it.
+  HTTP2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+  The Refresh rate HTPP2 is very fast compared to HTTP1.1 .
+
+2. http version history 
+A) The Hypertext Transfer Protocol (HTTP) is an application layer protocol for distributed, collaborative, hypermedia information systems.
+   HTTP is the foundation of data communication for the World Wide Web.
+
+   HTTP/0.9:-It is the initial version of HTTP documented in a year 1991, it's a simple client-server, request-response, telenet-friendly protocol. 
+             No status/error codes, No URLs, No versioning. Methods supported GET only and Response type hypertext only.
+             No HTTP headers (cannot transfer other content type files).
+
+   HTTP/1.0:-It was realease in the year 1996. It was Browser-friendly protocol. In this Methods supported are GET, HEAD, POST.
+             Connection nature terminated immediately after the response.
+
+   HTTP/1.1:-It was first documented in year 1997. It This Methods supported are GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS.
+             Introduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, 
+             virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.
+             Connection nature are long-lived.
+
+   HTTP/2.0:-It was docun=mented in year 2015.
+	     It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). Needs to be converted back from binary in order to read it.
+  	     HTTP2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+             The Refresh rate HTPP2 is very fast compared to HTTP1.1
+
+   HTTP/3.0:It was docunmented in year 2020.It is the third and upcoming major version of the Hypertext Transfer Protocol used to exchange information on the World Wide Web, alongside HTTP/1.1 and HTTP/2.
+
+
+3. List 5 difference between Browser JS(console) vs Nodejs 
+A) 			  JS
+    JavaScript is a programming language. It running in any browser with proper browser engine.
+    Mainly use for any client-side activity for a web application.  
+    javaScript running any engine like V8(Google Crome), Spider maonkey(Fire Fox), JavaScript Core(Safari).
+
+			Node.js
+    It is an interpreter and enviroment for JavaScript with some specific useful libraries which javaScript programming can use separately.
+    It mainly using for accessind any non-blocking operation of any operating system.
+    Node.js only run in V8 engine which mainly using by google chrome. and javascript program whcih will be written under this NodeJS will be always run in V3 Engine.
+
+
+
+4. What happens when you type a URL in the address bar in the browser?
+A) Below are the Steps when we type a URL in the address bar in the browser.
+   1) You type www.example.com into the address bar of your browser.  
+   2) The browser checks the cache for a DNS record to find the corresponding IP address of www.example.com.
+   3) If the requested URL is not in the cache, ISP’s DNS server initiates a DNS query to find the IP address of the server that hosts www.example.com.
+   4) The browser initiates a TCP connection with the server.
+   5) The browser sends an HTTP request to the webserver.
+   6) Then the server handles the request and sends back a response.
+   7) The server sends out an HTTP response.
+   8)  The browser displays the HTML content (for HTML responses, which is the most common).
+   
